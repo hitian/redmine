@@ -1200,6 +1200,11 @@ function inlineAutoComplete(element) {
     tribute.attach(element);
 }
 
+$(document).ready(function(){
+  $('#issue_assigned_to_id').select2({
+    width: '100%'
+  });
+});
 
 $(document).ready(setupAjaxIndicator);
 $(document).ready(hideOnLoad);

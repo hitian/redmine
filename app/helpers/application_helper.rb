@@ -634,7 +634,7 @@ module ApplicationHelper
         selected_attribute = ' selected="selected"'
       end
       (element.is_a?(Group) ? groups : s) <<
-        %(<option value="#{element.id}"#{selected_attribute}>#{h element.name}</option>)
+        %(<option value="#{element.id}"#{selected_attribute}>#{h element.name} - #{h element.login}</option>)
     end
     unless groups.empty?
       s << %(<optgroup label="#{h(l(:label_group_plural))}">#{groups}</optgroup>)
